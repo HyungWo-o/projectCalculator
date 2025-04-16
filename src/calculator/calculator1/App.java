@@ -1,5 +1,7 @@
 package calculator.calculator1;
 
+import calculator.calculator2.Calculator;
+
 import java.util.Scanner;
 
 public class App {
@@ -7,6 +9,7 @@ public class App {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
         while (true) {
             System.out.print("첫번째 '0'포함 양의 정수를 입력하세요: ");
             int num1 = scanner.nextInt();
@@ -18,17 +21,19 @@ public class App {
             String str1 = scanner.next();
             char char1 = str1.charAt(0);
 
+            Calculator cal = new Calculator(num1, num2, char1);
+
             int res = 0;
             if (char1 == '+') {
-                res = num1 + num2;
+                res = cal.sum();
             } else if (char1 == '-') {
-                res = num1 - num2;
+                res = cal.sub();
             } else if (char1 == '*') {
-                res = num1 * num2;
+                res = cal.mul();
             } else if (char1 == '/') {
                 try {
                     if (num2 != 0) {
-                        res = num1 / num2;
+                        res = cal.div();
                     } else {
                         throw new ArithmeticException();
                     }
