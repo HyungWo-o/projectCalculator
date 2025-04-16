@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c12058e-b29b-492c-9866-2854906ad769" name="변경" comment="2단계 생성">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4c12058e-b29b-492c-9866-2854906ad769" name="변경" comment="2단계 완성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calculator/calculator1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/calculator1/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calculator/calculator2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/calculator2/Calculator.java" afterDir="false" />
@@ -83,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744776603721</updated>
       <workItem from="1744776604708" duration="2022000" />
-      <workItem from="1744797041293" duration="1140000" />
+      <workItem from="1744797041293" duration="6112000" />
     </task>
     <task id="LOCAL-00001" summary="2단계 생성">
       <option name="closed" value="true" />
@@ -93,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744776724813</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2단계 완성">
+      <option name="closed" value="true" />
+      <created>1744798384135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744798384135</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2단계 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="2단계 생성" />
+    <MESSAGE value="2단계 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="2단계 완성" />
   </component>
 </project>
