@@ -8,14 +8,16 @@ public class App {
 
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
         while (true) {
-            Scanner scanner = new Scanner(System.in);
             System.out.print("첫번째 '0'포함 양의 정수를 입력하세요: ");
             int num1;
             try {
                 num1 = scanner.nextInt();
             } catch (Exception e) {
                 System.out.println("정수만 입력해주세요.");
+                scanner.nextLine(); // 문자 입력 시 무한루프 방지를 위해 버퍼 비우는 코드
                 continue;
             }
 
@@ -25,6 +27,7 @@ public class App {
                 num2 = scanner.nextInt();
             } catch (Exception e) {
                 System.out.println("정수만 입력해주세요.");
+                scanner.nextLine(); // 문자 입력 시 무한루프 방지를 위해 버퍼 비우는 코드
                 continue;
             }
 
@@ -37,6 +40,7 @@ public class App {
                 }
             } catch (Exception e) {
                 System.out.println("사칙연산 기호를 입력해주세요.");
+                scanner.nextLine(); // 문자 입력 시 무한루프 방지를 위해 버퍼 비우는 코드
                 continue;
             }
 
