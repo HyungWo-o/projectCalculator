@@ -2,6 +2,8 @@ package calculator.calculator1;
 
 import calculator.calculator2.Calculator;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -9,6 +11,7 @@ public class App {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        List<Integer> resultArr = new ArrayList<>();
 
         while (true) {
             System.out.print("첫번째 '0'포함 양의 정수를 입력하세요: ");
@@ -53,7 +56,15 @@ public class App {
             int res = cal.getResult();
 
             if (num2 != 0 || char1 != '/') {
-                System.out.println("res = " + res);
+                System.out.println("계산 결과값 : " + res);
+                resultArr.add(res);
+                System.out.println("누적된 계산 결과값 : " + resultArr);
+                System.out.println("가장 오래된 결과값을 삭제하시겠습니까? (Y 입력시 삭제)");
+                char char2 = scanner.next().charAt(0);
+                if(char2 == 'Y') {
+                    cal.resultDelete(resultArr);
+                    System.out.println("누적된 계산 결과값 : " + resultArr);
+                }
             }
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
