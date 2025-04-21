@@ -16,6 +16,10 @@ public class App {
             int num1;
             try {
                 num1 = scanner.nextInt();
+                if(num1 < 0) {
+                    System.out.println("음수는 입력할 수 없습니다.");
+                    continue;
+                }
             } catch (Exception e) {
                 System.out.println("정수만 입력해주세요.");
                 scanner.nextLine(); // 문자 입력 시 무한루프 방지를 위해 버퍼 비우는 코드
@@ -26,6 +30,10 @@ public class App {
             int num2;
             try {
                 num2 = scanner.nextInt();
+                if(num1 < 0) {
+                    System.out.println("음수는 입력할 수 없습니다.");
+                    continue;
+                }
             } catch (Exception e) {
                 System.out.println("정수만 입력해주세요.");
                 scanner.nextLine(); // 문자 입력 시 무한루프 방지를 위해 버퍼 비우는 코드
