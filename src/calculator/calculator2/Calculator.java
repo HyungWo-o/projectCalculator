@@ -1,6 +1,5 @@
 package calculator.calculator2;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator {
@@ -33,10 +32,9 @@ public class Calculator {
         }
     }
 
-    public List<Integer> resultDelete(List<Integer> arr) {
+    public void resultDelete(List<Integer> arr) {
         arr.remove(0);
         System.out.println("삭제되었습니다.");
-        return arr;
     }
 
     public void setNum1(int num1) {
