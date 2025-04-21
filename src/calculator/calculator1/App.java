@@ -9,22 +9,45 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.print("첫번째 '0'포함 양의 정수를 입력하세요: ");
-            int num1 = scanner.nextInt();
-            if(num1 < 0) {
-                System.out.println("음수는 입력할 수 없습니다.");
+            int num1;
+            try {
+                num1 = scanner.nextInt();
+                if(num1 < 0) {
+                    System.out.println("음수는 입력할 수 없습니다.");
+                    continue;
+                }
+            } catch (Exception e) {
+                System.out.println("정수만 입력해주세요.");
+                scanner.nextLine(); // 문자 입력 시 무한루프 방지를 위해 버퍼 비우는 코드
                 continue;
             }
 
             System.out.print("두번째 '0'포함 양의 정수를 입력하세요: ");
-            int num2 = scanner.nextInt();
-            if(num2 < 0) {
-                System.out.println("음수는 입력할 수 없습니다.");
+            int num2;
+            try {
+                num2 = scanner.nextInt();
+                if(num2 < 0) {
+                    System.out.println("음수는 입력할 수 없습니다.");
+                    continue;
+                }
+            } catch (Exception e) {
+                System.out.println("정수만 입력해주세요.");
+                scanner.nextLine(); // 문자 입력 시 무한루프 방지를 위해 버퍼 비우는 코드
                 continue;
             }
 
             System.out.print("사칙연산 기호를 입력하세요: ");
             String str1 = scanner.next();
             char char1 = str1.charAt(0);
+            try {
+                if(char1 != '+' && char1 != '-' && char1 != '*' && char1 != '/') {
+                    throw new Exception();
+                }
+            } catch (Exception e) {
+                System.out.println("사칙연산 기호를 입력해주세요.");
+                scanner.nextLine(); // 문자 입력 시 무한루프 방지를 위해 버퍼 비우는 코드
+                continue;
+            }
 
             int res = 0;
             if (char1 == '+') {
