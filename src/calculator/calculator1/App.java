@@ -10,9 +10,17 @@ public class App {
         while (true) {
             System.out.print("첫번째 '0'포함 양의 정수를 입력하세요: ");
             int num1 = scanner.nextInt();
+            if(num1 < 0) {
+                System.out.println("음수는 입력할 수 없습니다.");
+                continue;
+            }
 
             System.out.print("두번째 '0'포함 양의 정수를 입력하세요: ");
             int num2 = scanner.nextInt();
+            if(num2 < 0) {
+                System.out.println("음수는 입력할 수 없습니다.");
+                continue;
+            }
 
             System.out.print("사칙연산 기호를 입력하세요: ");
             String str1 = scanner.next();
